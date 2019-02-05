@@ -1178,12 +1178,34 @@ Structure and Layout
     margin-left: 0;
 }
 
-/*
-Common Classes
------------------------------------------------------------------------------ */
+#attachment_437, #attachment_447 {
+    width: 49% !important;
+    float: left;
+}
 
-/* Avatar
---------------------------------------------- */
+#attachment_437 img, #attachment_447 img {
+    object-fit: cover;
+    max-height: 195px;
+}
+
+#attachment_437 {
+    margin-right: 2%;
+}
+
+#attachment_447 {
+    margin-right: 0;
+}
+
+@media only screen and (max-width: 850px) {
+    #attachment_437, #attachment_447 {
+        width: 100% !important;
+    }
+
+    #attachment_437 img, #attachment_447 img {
+        width: 100%;
+        max-height: 400px;
+    }
+}
 
 .avatar {
     -webkit-border-radius: 50%;
